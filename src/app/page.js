@@ -1,9 +1,17 @@
-import React from 'react'
+import Banner from "@/app/(home)/components/Banner";
+import Image from "next/image";
+import BookList from "./(home)/components/BookList";
+import { Suspense } from "react";
+import Loading from "@/components/Loading";
+// export const dynamic = 'force-dynamic';
 
-const page = () => {
+export default async function Home() {
   return (
-    <div>page</div>
-  )
+    <>
+      <Banner />
+      <Suspense fallback={<Loading />}>
+        <BookList />
+      </Suspense>
+    </>
+  );
 }
-
-export default page

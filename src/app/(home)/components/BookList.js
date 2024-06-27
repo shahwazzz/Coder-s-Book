@@ -1,7 +1,7 @@
 "use client"; // This directive makes the component a Client Component
 
 import React, { useEffect, useState } from "react";
-import BookCard from "./Bookcard";
+import BookCard from "./BookCard";
 
 const BookList = () => {
   const [books, setBooks] = useState([]);

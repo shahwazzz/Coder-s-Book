@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // Ensure baseUrl is set if using paths
+    "baseUrl": ".", 
     "paths": {
       "@/*": ["./src/*"]
     }
